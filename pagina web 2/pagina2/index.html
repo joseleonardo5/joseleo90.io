@@ -1,0 +1,246 @@
+<!DOCTYPE html><html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #000;
+    }
+    header, section {
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+    nav a {
+      margin: 0 1rem;
+      text-decoration: none;
+      color: #000;
+    }
+    .hero {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 4rem 2rem;
+    }
+    .hero-text h1 {
+      font-size: 2.5rem;
+      font-weight: bold;
+    }
+    .hero-text p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+    }
+    .btn-primary {
+      margin-top: 1.5rem;
+      background: #000;
+      color: #fff;
+      padding: 0.8rem 1.5rem;
+      border: none;
+      cursor: pointer;
+      font-size: 1rem;
+      border-radius: 0.4rem;
+    }
+    .highlight {
+      background-color: #c0ff63;
+      padding: 0.3rem 0.6rem;
+      font-weight: bold;
+      border-radius: 4px;
+    }
+    .services-grid, .cards-grid {
+      display: grid;
+      gap: 1rem;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      margin-top: 2rem;
+    }
+    .card {
+      border-radius: 1rem;
+      padding: 1rem;
+      background: #f3f3f3;
+      text-align: center;
+      position: relative;
+    }
+    .card.dark {
+      background: #000;
+      color: #fff;
+    }
+    .faq {
+      margin: 2rem 0;
+    }
+    .faq-item {
+      background: #eee;
+      border-radius: 2rem;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .contact-form {
+      background: #f3f3f3;
+      padding: 2rem;
+      border-radius: 1rem;
+    }
+    .contact-form input, .contact-form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      margin-bottom: 1rem;
+      border: 1px solid #ccc;
+      border-radius: 0.4rem;
+    }
+    .send-button {
+      background: #000;
+      color: #fff;
+      padding: 0.8rem;
+      width: 100%;
+      border: none;
+      border-radius: 0.4rem;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="./img/hostinger.png" alt="Hostinger Logo" style="width: 150px;">
+    <nav>
+      <a href="#">Sobre Nosotros</a>
+      <a href="#">Servicios</a>
+      <a href="#">FAQ</a>
+      <a href="#">Testimonial</a>
+      <button class="btn-primary">Contac us</button>
+    </nav>
+  </header>  <section class="hero">
+    <div class="hero-text">
+      <h1>Transforma Tu Visión en <br> <strong>Realidad Digital</strong></h1>
+      <p>Desde landing pages <br>impactantes hasta sitios web completos, creamos soluciones 
+        que destacan y convierten.</p>
+      <button class="btn-primary">Agendar una cita</button>
+    </div>
+    <div>
+      <img src="./img/img1.png" alt="Dev illustration" width="500">
+    </div>
+  </section>  <section>
+    <h2 class="highlight">Services</h2>
+    <style>
+        .highlight{
+            background-color: #c0ff63;
+            color: black;
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 5px;
+            font-size: 18px;
+        }
+    </style>
+    <p>Desde una presencia en línea sencilla hasta complejos portales de comercio electrónico...</p>
+    <div class="services-grid">
+      
+
+<div class="card">
+  <img src="./img/img2.png" alt="Imagen 1" width="300">
+</div>&nbsp;&nbsp;
+<div class="card">
+  <img src="./img/img3.png" alt="Imagen 2" width="300">
+</div>&nbsp;&nbsp;
+<div class="card">
+  <img src="./img/img4.png" alt="Imagen 3" width="300">
+</div>
+
+<br><br>
+
+<div class="card">
+  <img src="./img/img3.png" alt="Imagen 4" width="300">
+</div>&nbsp;&nbsp;
+<div class="card">
+  <img src="./img/img4.png" alt="Imagen 5" width="300">
+</div>&nbsp;&nbsp;
+<div class="card">
+  <img src="./img/img2.png" alt="Imagen 6" width="300">
+</div>
+</div> <!-- Esto cierra el .services-grid -->
+
+<!-- Imagen horizontal grande en el centro, sin afectar lo demás -->
+<div style="width: 100%; display: flex; justify-content: center; margin: 3rem 0;">
+  <img src="./img/img5.png" alt="Imagen central destacada"
+       style="width: 100%; max-width: 1000px; border-radius: 20px; box-shadow: 0 4px 20px rgba(0,0,0,0.2);">
+</div>
+
+    </div>
+  </section>  <section class="faq">
+    <h2 class="highlight">Our Working Process</h2>
+    <div class="faq-item">Ingresa tu pregunta <span>+</span></div>
+    <div class="faq-item">Ingresa tu pregunta <span>+</span></div>
+    <div class="faq-item">Ingresa tu pregunta <span>+</span></div>
+    <div class="faq-item">Ingresa tu pregunta <span>+</span></div>
+  </section>  <section>
+    <h2 class="highlight">Contact us</h2>
+    <p>Contacta con nosotros, para que tengas tu presencia en internet.</p>
+    <div class="contact-form">
+      <input type="text" placeholder="Nombre">
+      <input type="email" placeholder="Email">
+      <textarea placeholder="Message"></textarea>
+      <button class="send-button">Send Message</button>
+    </div>
+    
+<footer style="background-color: #0f0f1b; color: white; padding: 50px; border-radius: 50px 30px 0 0;">
+  <div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+    
+   
+    <div>
+      <img src="./img/Hostinger_Logo-white.png" alt="Hostinger Logo" style="width: 150px;">
+      <p style="margin-top: 20px; background-color: #a6f751; color: black; display: inline-block; padding: 5px 10px; border-radius: 5px;">
+       
+        Contact us:
+      </p>
+      <p style="margin: 10px 0;">Email: hola[at]alexcg.com</p>
+      <p>Telefono: 554-433-2211</p>
+      <p>Dirección 1234,<br>Calle Principal,<br>Ciudad de México.</p>
+    </div>
+
+    
+    <div style="margin-top: 20px;">
+      <ul style="list-style: none; padding: 0; display: flex; gap: 20px; flex-wrap: wrap;">
+        <li><a href="#" style="color: white; text-decoration: none;">Sobre Nosotros</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Servicios</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">FAQS</a></li>
+        <li><a href="#" style="color: white; text-decoration: none;">Contacto</a></li>
+      </ul>
+    </div>
+
+    
+    <div style="margin-top: 20px;">
+      <form>
+        <input type="email" placeholder="Email" required
+          style="padding: 10px; border-radius: 10px; border: 1px solid #ccc; margin-bottom: 10px; width: 100%;">
+        <br>
+        <button type="submit"
+          style="background-color: #a6f751; color: black; padding: 10px 20px; border: none; border-radius: 10px; cursor: pointer; width: 100%;">
+          Suscribete
+        </button>
+      </form>
+    </div>
+  </div>
+
+  
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+
+<div style="margin-top: 30px; text-align: right;">
+  <a href="#" style="margin-right: 10px; font-size: 30px; color: #0A66C2;"><i class="fab fa-linkedin"></i></a>
+  <a href="#" style="margin-right: 10px; font-size: 30px; color: #1877F2;"><i class="fab fa-facebook"></i></a>
+  <a href="#" style="font-size: 30px; color: #1DA1F2;"><i class="fab fa-twitter"></i></a>
+</div>
+
+
+  <hr style="margin: 30px 0; border-color: #333;">
+  <p style="text-align: center;">© AlexCG Design - Derechos reservados.</p>
+</footer>
+  </section></body>
+</html>
